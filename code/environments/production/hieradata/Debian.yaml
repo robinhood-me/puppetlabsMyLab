@@ -1,0 +1,4 @@
+---
+ntp::admingroup: 'sudo'
+ntp::ntp_service: 'ntp'
+motd::message: 'Debian Node, Robin Hoods effort at getting a job that requires puppet'

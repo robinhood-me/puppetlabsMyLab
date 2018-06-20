@@ -1,0 +1,7 @@
+---
+motd::message: 'Robin Hoods effort at getting a job that requires puppet'
+ntp::ntp_regional_server:
+   - 'us.pool.ntp.org'
+   - 'uk.pool.ntp.org'
+ntp::monitor: true
+ntp::ntp_local_server: 'us.pool.ntp.org'

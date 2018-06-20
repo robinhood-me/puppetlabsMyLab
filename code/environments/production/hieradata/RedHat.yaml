@@ -1,0 +1,4 @@
+---
+ntp::admingroup: 'wheel'
+ntp::ntp_service: 'ntpd'
+motd::message: 'RedHat, Robin Hoods effort at getting a job that requires puppet'

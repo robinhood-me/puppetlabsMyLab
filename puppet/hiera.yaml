@@ -1,0 +1,16 @@
+---
+# Hiera 5 Global configuration file
+
+:backends:
+  - yaml
+:hierarchy:
+#  - name: "Classifier Configuration Data"
+#    data_hash: classifier_data  
+  - "nodes/%{::trusted.certname}"
+  - "location/%{facts.whereami}/%{facts.group}"
+  - "groups/%{facts.group}"
+  - "%{facts.os.family}"
+  - common
+
+:yaml:
+  :datadir:
